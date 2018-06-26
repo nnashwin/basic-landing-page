@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
 
-		<StyledNav links={[{href: "google.com", text: "cookies"}, {href: "amazon.com", text: 'cakes'}]}></StyledNav>
+		<StyledNav links={[{href: "google.com", text: "Home"}, {href: "amazon.com", text: 'Sign Up', isButton: true}]}></StyledNav>
 		<StyledHeader imageUrl={"https://placekitten.com/1200/945"}></StyledHeader>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
