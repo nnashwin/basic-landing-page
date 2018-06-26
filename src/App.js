@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { StyledNav } from './components/Navbar';
+import { StyledHeader } from './components/Overlay';
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className="App">
 
 		<StyledNav links={[{href: "google.com", text: "cookies"}, {href: "amazon.com", text: 'cakes'}]}></StyledNav>
+		<StyledHeader imageUrl={"https://placekitten.com/1200/945"}></StyledHeader>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
