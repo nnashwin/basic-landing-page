@@ -20,7 +20,6 @@ const Header = ({className, imageUrl}) => {
 export const StyledHeader = styled(Header)`
 	box-sizing: border-box;
 	font-size: 16px;
-	max-width: 960px;
 	color: rgba(0, 0, 0, 0);
 
 	${props => props.imageUrl && css`
