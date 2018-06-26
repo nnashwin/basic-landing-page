@@ -10,6 +10,10 @@ const Container = styled.div`
 	text-align: left;
 	padding: 15px 40px;
 `;
+
+const StyledNavLink = styled.a`
+	font-size: 20px;
+`;
 	
 const Navbar = ({className, links}) => {
 	return (
@@ -17,7 +21,7 @@ const Navbar = ({className, links}) => {
 			<Container>
 				{links.map((link) => {
 					let {href, text} = link;
-					return <a href={href}>{text}</a>
+					return <StyledNavLink href={href}>{text}</StyledNavLink>
 				})}
 			</Container>
 		</nav>
