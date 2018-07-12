@@ -25,6 +25,7 @@ const IconDesc = styled.p`
 
 const IconDiv = styled.div`
 	max-width: 320px;
+	padding: 20px 0;
 `;
 
 const IconPicDiv = styled.div`
