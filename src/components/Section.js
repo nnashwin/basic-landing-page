@@ -59,3 +59,18 @@ const IconSection = ({className}) => {
 export const StyledIconSection = styled(IconSection)`
 	padding: 7rem 0;
 `;
+
+export const Section = styled.section``;
+
+export const SplitDiv = styled.div`
+	display: flex;
+	flex-direction: row;
+`;
+
+export const SplitPicDiv = styled.div`
+	flex-basis: 50%;
+`;
+
+export const SplitTextDiv = styled.div`
+	flex-basis: 50%;
+`;

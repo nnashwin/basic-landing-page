@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { StyledNav } from './components/Navbar';
 import { StyledHeader } from './components/Overlay';
-import { StyledIconSection } from './components/Section';
+import { StyledIconSection, Section, SplitDiv, SplitPicDiv, SplitTextDiv } from './components/Section';
 
 class App extends Component {
   render() {
@@ -16,6 +16,12 @@ class App extends Component {
 			  To get started, edit <code>src/App.js</code> and save to reload.
 			</p>
 		</StyledIconSection>
+		<Section>
+			<SplitDiv>
+				<SplitPicDiv>Picture</SplitPicDiv>
+				<SplitTextDiv>Textbox</SplitTextDiv>
+			</SplitDiv>
+		</Section>
       </div>
     );
   }
