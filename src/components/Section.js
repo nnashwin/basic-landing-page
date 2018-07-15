@@ -69,6 +69,11 @@ export const SplitDiv = styled.div`
 
 export const SplitPicDiv = styled.div`
 	flex-basis: 50%;
+	min-height: 480px;
+	max-width: 50%;
+	order: ${props => props.order === 'right' ? 2 : ''};
+	background-image: url(${props => props.imageUrl ? props.imageUrl : ''});
+	background-repeat: no-repeat;
 `;
 
 export const SplitTextDiv = styled.div`

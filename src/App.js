@@ -18,7 +18,7 @@ class App extends Component {
 		</StyledIconSection>
 		<Section>
 			<SplitDiv>
-				<SplitPicDiv>Picture</SplitPicDiv>
+				<SplitPicDiv order={'right'} imageUrl={'https://placekitten.com/1000/480'}>Picture</SplitPicDiv>
 				<SplitTextDiv>Textbox</SplitTextDiv>
 			</SplitDiv>
 		</Section>
