@@ -94,11 +94,11 @@ export const SplitTextDiv = styled.div`
 	max-width: 50%;
 	order: ${props => props.order === 'right' ? 2 : 1};
 	width: 538px;
-
+	justify-content: center;
+	text-align: left;
 	@media (max-width: ${sizes.smallTablet.width}) {
 		width: 100%;
 		max-width: 100%;
-		text-align: center;
 	}
 `;
 
@@ -107,12 +107,9 @@ export const SplitTextTitle = styled.h2`
 	line-height: 38.2px;
 	margin-bottom: 8px;
 	margin-top: 0px;
-	text-align: left;
-	@media (max-width: ${sizes.smallTablet.width}) {
-		text-align: center;
-	}
 `;
 
 export const SplitTextBody = styled.p`
-	
+	font-size: 20px;
+	font-weight: 300;
 `;
