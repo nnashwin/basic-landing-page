@@ -64,18 +64,37 @@ export const Section = styled.section``;
 
 export const SplitDiv = styled.div`
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 `;
 
 export const SplitPicDiv = styled.div`
 	flex-basis: 50%;
 	min-height: 480px;
 	max-width: 50%;
-	order: ${props => props.order === 'right' ? 2 : ''};
+	order: ${props => props.order === 'right' ? 2 : 1};
 	background-image: url(${props => props.imageUrl ? props.imageUrl : ''});
 	background-repeat: no-repeat;
 `;
 
 export const SplitTextDiv = styled.div`
 	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 118px;
+	line-height: 24px;
+	max-width: 50%;
+	order: ${props => props.order === 'right' ? 2 : 1};
+	width: 538px;
+`;
+
+export const SplitTextTitle = styled.h2`
+	font-size: 32px;
+	line-height: 38.2px;
+	margin-bottom: 8px;
+	margin-top: 0px;
+	text-align: left;
+`;
+
+export const SplitTextBody = styled.p`
+	
 `;
