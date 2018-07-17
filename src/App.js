@@ -1,11 +1,32 @@
 import React, { Component } from 'react';
 import './App.css';
+import sizes from 'point-breaks';
 import { StyledNav } from './components/Navbar';
 import { StyledHeader } from './components/Overlay';
 import { StyledIconSection, Section, SplitDiv, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody } from './components/Section';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+	this.state = {width: 0};
+  }
+
+  updateWidth() {
+	this.setState({ width: window.innerWidth });
+  }
+
+  componentDidMount() {
+	this.updateWidth();
+	window.addEventListener("resize", this.updateWidth.bind(this));
+  }
+
+  componentWillUnmount() {
+	window.removeEventListener("resize", this.updateWidth.bind(this));
+  }
+
   render() {
+	const smallTabletWidth = Number(sizes.smallTablet.width.slice(0, -2));
+
     return (
       <div className="App">
 		<StyledNav links={[{href: "google.com", text: "Home"}, {href: "amazon.com", text: 'Sign Up', isButton: true}]}></StyledNav>
@@ -22,8 +43,8 @@ class App extends Component {
 				<SplitPicDiv order={'right'} imageUrl={'https://placekitten.com/1200/480'} />
 			</SplitDiv>
 			<SplitDiv>
-				<SplitTextDiv order={'right'}>Textbox2</SplitTextDiv>
-				<SplitPicDiv order={'left'} imageUrl={'https://placekitten.com/1200/480'} />
+				{ this.state.width < smallTabletWidth? <SplitTextDiv order={'left'}>Textbox2</SplitTextDiv> : <SplitTextDiv order={'right'}>Textbox2</SplitTextDiv>}
+				{ this.state.width < smallTabletWidth ? <SplitPicDiv order={'right'} imageUrl={'https://placekitten.com/1200/480'} /> : <SplitPicDiv order={'left'} imageUrl={'https://placekitten.com/1200/480'} />}
 			</SplitDiv>
 			<SplitDiv>
 				<SplitTextDiv order={'left'} >
