@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import sizes from 'point-breaks';
 
 const IconHolder = styled.div`
 	display: flex;
@@ -65,15 +66,23 @@ export const Section = styled.section``;
 export const SplitDiv = styled.div`
 	display: flex;
 	flex-flow: row wrap;
+	@media (max-width: ${sizes.smallTablet.width}) {
+		flex-direction: column;
+		justify-content: center;
+	}
 `;
 
 export const SplitPicDiv = styled.div`
 	flex-basis: 50%;
-	min-height: 480px;
 	max-width: 50%;
 	order: ${props => props.order === 'right' ? 2 : 1};
+	min-height: 480px;
 	background-image: url(${props => props.imageUrl ? props.imageUrl : ''});
 	background-repeat: no-repeat;
+	@media (max-width: ${sizes.smallTablet.width}) {
+		width: 100%;
+		max-width: 100%;
+	}
 `;
 
 export const SplitTextDiv = styled.div`
@@ -85,6 +94,12 @@ export const SplitTextDiv = styled.div`
 	max-width: 50%;
 	order: ${props => props.order === 'right' ? 2 : 1};
 	width: 538px;
+
+	@media (max-width: ${sizes.smallTablet.width}) {
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+	}
 `;
 
 export const SplitTextTitle = styled.h2`
@@ -93,6 +108,9 @@ export const SplitTextTitle = styled.h2`
 	margin-bottom: 8px;
 	margin-top: 0px;
 	text-align: left;
+	@media (max-width: ${sizes.smallTablet.width}) {
+		text-align: center;
+	}
 `;
 
 export const SplitTextBody = styled.p`
