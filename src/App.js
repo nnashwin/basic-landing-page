@@ -82,6 +82,7 @@ class App extends Component {
 			<CenteredTextBody>Go Out and look at / buy some cats!</CenteredTextBody>
 			<button>CallToAction Button</button>
 		</CenteredSection>
+		<footer>This is the footer!!</footer>
       </div>
     );
   }
