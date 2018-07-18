@@ -3,7 +3,8 @@ import './App.css';
 import sizes from 'point-breaks';
 import { StyledNav } from './components/Navbar';
 import { StyledHeader } from './components/Overlay';
-import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody, CenteredSection } from './components/Section';
+import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody,
+	CenteredSection, CenteredTitle, CenteredTextBody } from './components/Section';
 
 class App extends Component {
   constructor(props) {
@@ -75,10 +76,10 @@ class App extends Component {
 			<SplitPicDiv order={'right'} imageUrl={'https://placekitten.com/1200/480'} />
 		</SplitSection>
 		<CenteredSection>
-			<div>
+			<CenteredTitle>
 				Call toAction Section!!	
-			</div>
-			<div>This is your call to action body!</div>
+			</CenteredTitle>
+			<CenteredTextBody>Go Out and look at / buy some cats!</CenteredTextBody>
 			<button>CallToAction Button</button>
 		</CenteredSection>
       </div>

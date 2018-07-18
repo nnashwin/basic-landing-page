@@ -119,4 +119,20 @@ export const CenteredSection = styled.section`
 	justify-content: center;
 	align-items: center;
 	min-height: 340px;
+	background-color: ${props => props.backgroundColor ? props.backgroundColor : '#0e1a2a'}
+	color: ${props => props.color ? props.color : 'whitesmoke'}
+`;
+
+export const CenteredTitle = styled.h2`
+	font-size: 32px;
+	line-height: 38.2px;
+	margin-bottom: 8px;
+	margin-top: 0px;
+`;
+
+export const CenteredTextBody = styled.p`
+	width: 516px;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
 `;
