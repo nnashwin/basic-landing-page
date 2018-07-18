@@ -92,6 +92,7 @@ export const SplitTextDiv = styled.div`
 	padding: 118px;
 	line-height: 24px;
 	max-width: 50%;
+	max-height: 480px;
 	order: ${props => props.order === 'right' ? 2 : 1};
 	width: 538px;
 	justify-content: center;
