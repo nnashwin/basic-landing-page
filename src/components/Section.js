@@ -61,9 +61,7 @@ export const StyledIconSection = styled(IconSection)`
 	padding: 7rem 0;
 `;
 
-export const Section = styled.section``;
-
-export const SplitDiv = styled.div`
+export const SplitSection = styled.section`
 	display: flex;
 	flex-flow: row wrap;
 	@media (max-width: ${sizes.smallTablet.width}) {
@@ -113,4 +111,12 @@ export const SplitTextTitle = styled.h2`
 export const SplitTextBody = styled.p`
 	font-size: 20px;
 	font-weight: 300;
+`;
+
+export const CenteredSection = styled.section`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 340px;
 `;
