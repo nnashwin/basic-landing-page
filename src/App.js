@@ -26,6 +26,17 @@ class App extends Component {
 
   render() {
 	const smallTabletWidth = Number(sizes.smallTablet.width.slice(0, -2));
+	const secondDivText = "Lorem ipsum dolor amet adaptogen thundercats keffiyeh pop-up lomo ramps. Butcher hella marfa, narwhal yr microdosing ramps."
+	const determineSecondSplitDiv = (orderInput) => {
+		return (
+			<SplitTextDiv order={orderInput}>
+				<SplitTextTitle>
+					Totally Furry Kitties
+				</SplitTextTitle>
+				<SplitTextBody>{secondDivText}</SplitTextBody>	
+			</SplitTextDiv>
+		);
+	}
 
     return (
       <div className="App">
@@ -39,11 +50,18 @@ class App extends Component {
 		</StyledIconSection>
 		<Section>
 			<SplitDiv>
-				<SplitTextDiv order={'left'}>Textbox</SplitTextDiv>
+				<SplitTextDiv order={'left'} >
+					<SplitTextTitle>
+						Totally Kitties
+					</SplitTextTitle>
+					<SplitTextBody>
+						Pee in the shoe lick the curtain just to be annoying but the dog smells bad show belly.
+					</SplitTextBody>
+				</SplitTextDiv>
 				<SplitPicDiv order={'right'} imageUrl={'https://placekitten.com/1200/480'} />
 			</SplitDiv>
 			<SplitDiv>
-				{ this.state.width < smallTabletWidth? <SplitTextDiv order={'left'}>Textbox2</SplitTextDiv> : <SplitTextDiv order={'right'}>Textbox2</SplitTextDiv>}
+				{ this.state.width < smallTabletWidth? determineSecondSplitDiv('left') : determineSecondSplitDiv('right')}
 				{ this.state.width < smallTabletWidth ? <SplitPicDiv order={'right'} imageUrl={'https://placekitten.com/1200/480'} /> : <SplitPicDiv order={'left'} imageUrl={'https://placekitten.com/1200/480'} />}
 			</SplitDiv>
 			<SplitDiv>
