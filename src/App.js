@@ -79,8 +79,11 @@ class App extends Component {
 			<CenteredTitle>
 				Call toAction Section!!	
 			</CenteredTitle>
-			<CenteredTextBody>Go Out and look at / buy some cats!</CenteredTextBody>
-			<button>CallToAction Button</button>
+				<CenteredTextBody>Go Out and look at / buy some cats!</CenteredTextBody>
+			<div style={{"display": "flex"}}>
+				<input type="email" placeholder="Please enter your email" />
+				<button>CallToAction Button</button>
+			</div>
 		</CenteredSection>
       </div>
     );
