@@ -128,6 +128,7 @@ export const CenteredTitle = styled.h2`
 	line-height: 38.2px;
 	margin-bottom: 8px;
 	margin-top: 0px;
+	padding-bottom: 0.5rem;
 `;
 
 export const CenteredTextBody = styled.p`
@@ -143,4 +144,22 @@ export const StyledEmailInput = styled.input.attrs({
 })`
 	margin-right: 10px;
 	width: 300px;
+	color: black;
+	border-radius: .3rem;
+	padding: .3rem 1rem;
+	height: 3rem;
+`;
+
+export const StyledSubmitButton = styled.button`
+	color: white;
+	padding: .3rem;
+	border: 1px solid transparent;
+	border-radius: .3rem;
+	background-color: #007bff;
+	height: 3rem;
+	padding: .6rem;
+	&:hover {
+		background-color: #0069d9;
+		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	}
 `;

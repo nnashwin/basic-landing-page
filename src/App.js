@@ -4,8 +4,8 @@ import sizes from 'point-breaks';
 import { StyledNav } from './components/Navbar';
 import { StyledHeader } from './components/Overlay';
 import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody,
-	CenteredSection, CenteredTitle, CenteredTextBody,
-	StyledEmailInput} from './components/Section';
+	CenteredSection, CenteredTitle,
+	StyledEmailInput, StyledSubmitButton } from './components/Section';
 
 class App extends Component {
   constructor(props) {
@@ -82,7 +82,7 @@ class App extends Component {
 			</CenteredTitle>
 			<div style={{"display": "flex"}}>
 				<StyledEmailInput />
-				<button>CallToAction Button</button>
+				<StyledSubmitButton>Sign Up!</StyledSubmitButton>
 			</div>
 		</CenteredSection>
 		<footer>This is the footer!!</footer>
