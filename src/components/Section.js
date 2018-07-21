@@ -136,3 +136,11 @@ export const CenteredTextBody = styled.p`
 	font-weight: 300;
 	text-align: center;
 `;
+
+export const StyledEmailInput = styled.input.attrs({
+	type: 'email',
+	placeholder: 'Please enter your email'
+})`
+	margin-right: 10px;
+	width: 300px;
+`;
