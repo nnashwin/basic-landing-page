@@ -166,7 +166,7 @@ export const StyledSubmitButton = styled.button`
 
 export const FooterSection = styled.section`
 	display: grid;
-	min-height: 340px;
+	min-height: 180px;
 	background-color: ${props => props.backgroundColor ? props.backgroundColor : 'whitesmoke'}
 	color: ${props => props.color ? props.color : 'black'}
 `;
@@ -179,4 +179,10 @@ export const FooterLinksDiv = styled.div`
 export const MediaLinksDiv = styled.div`
 	grid-row-start: 2;
 	grid-column-start: 4;
+`;
+
+export const CopyrightText = styled.p`
+	color: #6c757d !important
+	font-size: 12.8px;
+	font-weight: 400;
 `;
