@@ -6,7 +6,7 @@ import { StyledHeader } from './components/Overlay';
 import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody,
 	CenteredSection, CenteredTitle,
 	StyledEmailInput, StyledSubmitButton,
-	FooterSection
+	FooterSection, FooterLinksDiv, MediaLinksDiv
 } from './components/Section';
 
 class App extends Component {
@@ -87,7 +87,15 @@ class App extends Component {
 				<StyledSubmitButton>Sign Up!</StyledSubmitButton>
 			</div>
 		</CenteredSection>
-		<FooterSection>This is the footer!!</FooterSection>
+		<FooterSection>
+			<FooterLinksDiv>
+				<div>Links</div>		
+				<div>Copyright</div>		
+			</FooterLinksDiv>			
+			<MediaLinksDiv>
+				Other Links
+			</MediaLinksDiv>
+		</FooterSection>
       </div>
     );
   }

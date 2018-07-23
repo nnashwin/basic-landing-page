@@ -165,9 +165,18 @@ export const StyledSubmitButton = styled.button`
 `;
 
 export const FooterSection = styled.section`
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	min-height: 340px;
 	background-color: ${props => props.backgroundColor ? props.backgroundColor : 'whitesmoke'}
 	color: ${props => props.color ? props.color : 'black'}
+`;
+
+export const FooterLinksDiv = styled.div`
+	grid-row-start: 2;
+	grid-column-start: 2;
+`;
+
+export const MediaLinksDiv = styled.div`
+	grid-row-start: 2;
+	grid-column-start: 4;
 `;
