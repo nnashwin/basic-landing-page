@@ -6,7 +6,8 @@ import { StyledHeader } from './components/Overlay';
 import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody,
 	CenteredSection, CenteredTitle,
 	StyledEmailInput, StyledSubmitButton,
-	FooterSection, FooterLinksDiv, MediaLinksDiv
+	FooterSection, FooterLinksDiv, MediaLinksDiv,
+	CopyrightText
 } from './components/Section';
 
 class App extends Component {
@@ -90,10 +91,10 @@ class App extends Component {
 		<FooterSection>
 			<FooterLinksDiv>
 				<div>Links</div>		
-				<div>Copyright</div>		
+				<CopyrightText>© Ru-Lai Development 2018. All Rights Reserved.</CopyrightText>
 			</FooterLinksDiv>			
 			<MediaLinksDiv>
-				Other Links
+				Media Links
 			</MediaLinksDiv>
 		</FooterSection>
       </div>
