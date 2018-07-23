@@ -7,7 +7,7 @@ import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTi
 	CenteredSection, CenteredTitle,
 	StyledEmailInput, StyledSubmitButton,
 	FooterSection, FooterLinksDiv, MediaLinksDiv,
-	CopyrightText
+	CopyrightText, StyledListLink
 } from './components/Section';
 
 class App extends Component {
@@ -90,7 +90,11 @@ class App extends Component {
 		</CenteredSection>
 		<FooterSection>
 			<FooterLinksDiv>
-				<div>Links</div>		
+				<ul style={{'display': 'flex'}}>
+					<StyledListLink first={true} linkUrl="https://www.google.com" linkText="Google" />
+					<StyledListLink linkUrl="https://www.xkcd.com" linkText="Xkcd" />
+					<StyledListLink last={true} linkUrl="https://www.youtube.com" linkText="Youtube" />
+				</ul>		
 				<CopyrightText>© Ru-Lai Development 2018. All Rights Reserved.</CopyrightText>
 			</FooterLinksDiv>			
 			<MediaLinksDiv>

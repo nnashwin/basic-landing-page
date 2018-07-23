@@ -186,3 +186,17 @@ export const CopyrightText = styled.p`
 	font-size: 12.8px;
 	font-weight: 400;
 `;
+
+export const ListLink = ({linkUrl, linkText, className}) => {
+	return (
+		<li className={className}>
+			<a href={linkUrl}>{linkText}</a>
+		</li>
+	);
+};
+
+export const StyledListLink = styled(ListLink)`
+	padding-right: ${props => props && props.last ? '0px' : '20px'};
+	padding-left: ${props => props && props.first ? '0px' : '20px'};
+	border-right: ${props => props && props.last ? '' : '1px solid black'};
+`;
