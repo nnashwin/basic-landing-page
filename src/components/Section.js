@@ -87,7 +87,7 @@ export const SplitTextDiv = styled.div`
 	flex-basis: 50%;
 	display: flex;
 	flex-direction: column;
-	padding: 118px;
+	padding: 112px;
 	line-height: 24px;
 	max-width: 50%;
 	max-height: 480px;
@@ -162,4 +162,12 @@ export const StyledSubmitButton = styled.button`
 		background-color: #0069d9;
 		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
+`;
+
+export const FooterSection = styled.section`
+	display: flex;
+	flex-direction: column;
+	min-height: 340px;
+	background-color: ${props => props.backgroundColor ? props.backgroundColor : 'whitesmoke'}
+	color: ${props => props.color ? props.color : 'black'}
 `;

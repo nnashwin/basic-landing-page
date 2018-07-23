@@ -5,7 +5,9 @@ import { StyledNav } from './components/Navbar';
 import { StyledHeader } from './components/Overlay';
 import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody,
 	CenteredSection, CenteredTitle,
-	StyledEmailInput, StyledSubmitButton } from './components/Section';
+	StyledEmailInput, StyledSubmitButton,
+	FooterSection
+} from './components/Section';
 
 class App extends Component {
   constructor(props) {
@@ -85,7 +87,7 @@ class App extends Component {
 				<StyledSubmitButton>Sign Up!</StyledSubmitButton>
 			</div>
 		</CenteredSection>
-		<footer>This is the footer!!</footer>
+		<FooterSection>This is the footer!!</FooterSection>
       </div>
     );
   }
