@@ -166,18 +166,20 @@ export const StyledSubmitButton = styled.button`
 
 export const FooterSection = styled.section`
 	display: grid;
+	grid-template-columns: 10%;
+	grid-template-rows: 25% 25% 25% 25%;
 	min-height: 180px;
 	background-color: ${props => props.backgroundColor ? props.backgroundColor : 'whitesmoke'}
 	color: ${props => props.color ? props.color : 'black'}
 `;
 
 export const FooterLinksDiv = styled.div`
-	grid-row-start: 2;
+	grid-row-start: 3;
 	grid-column-start: 2;
 `;
 
 export const MediaLinksDiv = styled.div`
-	grid-row-start: 2;
+	grid-row-start: 3;
 	grid-column-start: 4;
 `;
 
@@ -199,4 +201,5 @@ export const StyledListLink = styled(ListLink)`
 	padding-right: ${props => props && props.last ? '0px' : '20px'};
 	padding-left: ${props => props && props.first ? '0px' : '20px'};
 	border-right: ${props => props && props.last ? '' : '1px solid black'};
+	color: rgb(0, 123, 255);
 `;

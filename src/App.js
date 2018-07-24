@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import sizes from 'point-breaks';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons'
 import { StyledNav } from './components/Navbar';
 import { StyledHeader } from './components/Overlay';
 import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody,
@@ -9,6 +12,8 @@ import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTi
 	FooterSection, FooterLinksDiv, MediaLinksDiv,
 	CopyrightText, StyledListLink
 } from './components/Section';
+
+library.add(fab);
 
 class App extends Component {
   constructor(props) {
@@ -98,7 +103,9 @@ class App extends Component {
 				<CopyrightText>© Ru-Lai Development 2018. All Rights Reserved.</CopyrightText>
 			</FooterLinksDiv>			
 			<MediaLinksDiv>
-				Media Links
+					<div>
+						Facebook: <FontAwesomeIcon icon={['fab', 'facebook-f']} />
+					</div>
 			</MediaLinksDiv>
 		</FooterSection>
       </div>
