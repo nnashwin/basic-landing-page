@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "point-breaks": "0.0.1",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
