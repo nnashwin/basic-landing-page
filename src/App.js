@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 import sizes from 'point-breaks';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { StyledNav } from './components/Navbar';
 import { StyledHeader } from './components/Overlay';
 import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody,
 	CenteredSection, CenteredTitle,
 	StyledEmailInput, StyledSubmitButton,
-	FooterSection, FooterLinksDiv, MediaLinksDiv, MediaLink,
+	FooterSection, FooterLinksDiv,
 	CopyrightText, StyledListLink
 } from './components/Section';
 
