@@ -9,7 +9,7 @@ import { StyledHeader } from './components/Overlay';
 import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody,
 	CenteredSection, CenteredTitle,
 	StyledEmailInput, StyledSubmitButton,
-	FooterSection, FooterLinksDiv, MediaLinksDiv,
+	FooterSection, FooterLinksDiv, MediaLinksDiv, MediaLink,
 	CopyrightText, StyledListLink
 } from './components/Section';
 
@@ -103,9 +103,12 @@ class App extends Component {
 				<CopyrightText>© Ru-Lai Development 2018. All Rights Reserved.</CopyrightText>
 			</FooterLinksDiv>			
 			<MediaLinksDiv>
-					<div>
-						Facebook: <FontAwesomeIcon icon={['fab', 'facebook-f']} />
-					</div>
+				<MediaLink linkUrl={"https://www.facebook.com"}>
+					<FontAwesomeIcon icon={['fab', 'facebook-f']} size="2x" />
+				</MediaLink>
+				<MediaLink linkUrl={"https://www.github.com"}>
+					<FontAwesomeIcon icon={['fab', 'github']} size="2x" />
+				</MediaLink>
 			</MediaLinksDiv>
 		</FooterSection>
       </div>

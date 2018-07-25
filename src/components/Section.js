@@ -181,6 +181,18 @@ export const FooterLinksDiv = styled.div`
 export const MediaLinksDiv = styled.div`
 	grid-row-start: 3;
 	grid-column-start: 4;
+	padding: 20px 0px;
+	display: flex;
+`;
+
+const Link = ({linkUrl, className, children}) => {
+	return (
+		<a href={linkUrl} className={className}>{children}</a>
+	)
+}
+
+export const MediaLink = styled(Link)`
+	padding: 0 10px;
 `;
 
 export const CopyrightText = styled.p`
