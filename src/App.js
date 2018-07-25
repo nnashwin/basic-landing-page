@@ -102,14 +102,6 @@ class App extends Component {
 				</ul>		
 				<CopyrightText>© Ru-Lai Development 2018. All Rights Reserved.</CopyrightText>
 			</FooterLinksDiv>			
-			<MediaLinksDiv>
-				<MediaLink linkUrl={"https://www.facebook.com"}>
-					<FontAwesomeIcon icon={['fab', 'facebook-f']} size="2x" />
-				</MediaLink>
-				<MediaLink linkUrl={"https://www.github.com"}>
-					<FontAwesomeIcon icon={['fab', 'github']} size="2x" />
-				</MediaLink>
-			</MediaLinksDiv>
 		</FooterSection>
       </div>
     );
