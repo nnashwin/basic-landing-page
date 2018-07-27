@@ -3,16 +3,14 @@ import './App.css';
 import sizes from 'point-breaks';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { StyledNav } from './components/Navbar';
-import { StyledHeader } from './components/Overlay';
-import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody,
+import { StyledNav, StyledHeader, StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody,
 	CenteredSection, CenteredTitle,
 	StyledEmailSection,
 	StyledEmailInput, StyledSubmitButton,
 	FooterSection, FooterLinksDiv,
 	StyledListOfLinks,
 	CopyrightText, StyledListLink
-} from './components/Section';
+} from './newIndex';
 
 library.add(fab);
 
