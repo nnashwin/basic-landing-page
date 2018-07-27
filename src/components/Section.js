@@ -138,6 +138,10 @@ export const CenteredTextBody = styled.p`
 	text-align: center;
 `;
 
+export const StyledEmailSection = styled.div`
+	display: flex;
+`;
+
 export const StyledEmailInput = styled.input.attrs({
 	type: 'email',
 	placeholder: 'Please enter your email'
@@ -203,6 +207,12 @@ export const CopyrightText = styled.p`
 	color: #6c757d !important
 	font-size: 12.8px;
 	font-weight: 400;
+`;
+
+export const StyledListOfLinks = styled.ul`
+	list-style: none;
+	padding: 0px;
+	display: 'flex';
 `;
 
 export const ListLink = ({linkUrl, linkText, className}) => {

@@ -7,8 +7,10 @@ import { StyledNav } from './components/Navbar';
 import { StyledHeader } from './components/Overlay';
 import { StyledIconSection, SplitSection, SplitPicDiv, SplitTextDiv, SplitTextTitle, SplitTextBody,
 	CenteredSection, CenteredTitle,
+	StyledEmailSection,
 	StyledEmailInput, StyledSubmitButton,
 	FooterSection, FooterLinksDiv,
+	StyledListOfLinks,
 	CopyrightText, StyledListLink
 } from './components/Section';
 
@@ -87,18 +89,18 @@ class App extends Component {
 			<CenteredTitle>
 				Call toAction Section!!	
 			</CenteredTitle>
-			<div style={{"display": "flex"}}>
+			<StyledEmailSection>
 				<StyledEmailInput />
 				<StyledSubmitButton>Sign Up!</StyledSubmitButton>
-			</div>
+			</StyledEmailSection>
 		</CenteredSection>
 		<FooterSection>
 			<FooterLinksDiv>
-				<ul style={{'display': 'flex'}}>
+				<StyledListOfLinks style={{'display': 'flex'}}>
 					<StyledListLink first={true} linkUrl="https://www.google.com" linkText="Google" />
 					<StyledListLink linkUrl="https://www.xkcd.com" linkText="Xkcd" />
 					<StyledListLink last={true} linkUrl="https://www.youtube.com" linkText="Youtube" />
-				</ul>		
+				</StyledListOfLinks>		
 				<CopyrightText>© Ru-Lai Development 2018. All Rights Reserved.</CopyrightText>
 			</FooterLinksDiv>			
 		</FooterSection>
